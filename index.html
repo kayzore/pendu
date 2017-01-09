@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pendu</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="assets/js/utility.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pendu.js"></script>
+    <script src="assets/js/user.js"></script>
+</head>
+
+<body>
+    <aside>
+        <span></span> <i class="fa fa-heart" aria-hidden="true"></i>
+    </aside>
+    <div id="endGame" class="is_hidden">
+        <p></p>
+        <button>Restart</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>/</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>Y</td>
+                    <td>=</td>
+                    <td>\</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="">|</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="">|</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="perso is_hidden">O</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="perso is_hidden">/</td>
+                    <td class="perso is_hidden">|</td>
+                    <td class="perso is_hidden">\</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="perso is_hidden">|</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="perso is_hidden">/</td>
+                    <td></td>
+                    <td class="perso is_hidden">\</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>/</td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>||</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                    <td>=</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="letter-case">
+    </div>
+    <div class="indice">
+        <p>
+            Indice : Chaque mot est une couleur.
+            <br /> Exemple Fer est une couleur.
+        </p>
+    </div>
+    <div class="keyboard">
+        <div class="row">
+            <button class="keys">a</button>
+            <button class="keys">z</button>
+            <button class="keys">e</button>
+            <button class="keys">r</button>
+            <button class="keys">t</button>
+            <button class="keys">y</button>
+            <button class="keys">u</button>
+            <button class="keys">i</button>
+            <button class="keys">o</button>
+            <button class="keys">p</button>
+        </div>
+        <div class="row">
+            <button class="keys">q</button>
+            <button class="keys">s</button>
+            <button class="keys">d</button>
+            <button class="keys">f</button>
+            <button class="keys">g</button>
+            <button class="keys">h</button>
+            <button class="keys">j</button>
+            <button class="keys">k</button>
+            <button class="keys">l</button>
+            <button class="keys">m</button>
+        </div>
+        <div class="row">
+            <button class="keys">w</button>
+            <button class="keys">x</button>
+            <button class="keys">c</button>
+            <button class="keys">v</button>
+            <button class="keys">b</button>
+            <button class="keys">n</button>
+        </div>
+    </div>
+</body>
+
+</html>
