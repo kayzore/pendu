@@ -1,4 +1,4 @@
-/*global log, byId, select, selectAll, app*/
+/*global log, byId, select, selectAll, app, user*/
 var pendu = (function pendu() {
     "use strict";
     var init,
@@ -24,7 +24,33 @@ var pendu = (function pendu() {
             'jaune',
             'violet',
             'orange',
-            'gris'
+            'gris',
+            'marron',
+            'kaki',
+            'azur',
+            'beige',
+            'ambre',
+            'blanc',
+            'bordeau',
+            'bronze',
+            'brun',
+            'blond',
+            'roux',
+            'cafe',
+            'chair',
+            'chatain',
+            'chocolat',
+            'citron',
+            'cassis',
+            'chataigne',
+            'carotte',
+            'creme',
+            'corail',
+            'cyan',
+            'cuivre',
+            'emeraude',
+            'fauve',
+            'fer'
         ];
 
         html = {};
@@ -95,8 +121,6 @@ var pendu = (function pendu() {
             if (count === (html.letterCase.childNodes.length - 1)) {
                 endGame = true;
                 motifEndGame = 'success';
-                app.client.life += 1;
-                app.refreshLifeZone();
             } else {
                 endGame = false;
             }
@@ -160,7 +184,6 @@ var pendu = (function pendu() {
                 }
                 html.endGame.style.height = 'auto';
                 html.endGame.classList.remove('is_hidden');
-
             }
         }
     };
